@@ -1,0 +1,37 @@
+Resposta da 1:
+
+#include <stdio.h>
+
+int main() {
+
+    int i;
+    int codigo;
+    int validos = 0;
+    int invalidos = 0;
+
+    // Lê 10 códigos
+    for(i = 1; i <= 10; i++) {
+
+        printf("Digite o codigo: ");
+        scanf("%d", &codigo);
+
+        // Verifica se o código possui 4 dígitos
+        if(codigo >= 1000 && codigo <= 9999) {
+
+            validos++;
+
+        }
+        else {
+
+            invalidos++;
+
+        }
+
+    }
+
+    // Mostra os resultados
+    printf("\nCodigos validos: %d\n", validos);
+    printf("Codigos invalidos: %d\n", invalidos);
+
+    return 0;
+}
