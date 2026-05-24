@@ -1,0 +1,61 @@
+
+#include <stdio.h>
+
+int main() {
+
+    int prioridade;
+    int continuar;
+
+    int baixa = 0;
+    int media = 0;
+    int alta = 0;
+
+  
+
+        printf("PRIORIDADE DO CHAMADO\n");
+
+        printf(" Baixa\n");
+        printf("Media\n");
+        printf("Alta\n");
+
+        printf("Digite a prioridade: ");
+        scanf("%d", &prioridade);
+
+        
+        if(prioridade == 1) {
+
+            baixa++;
+
+        }
+        else if(prioridade == 2) {
+
+            media++;
+
+        }
+        else if(prioridade == 3) {
+
+            alta++;
+
+        }
+        else {
+
+            printf("Prioridade invalida!\n");
+
+        }
+
+        
+        printf("Deseja continuar? (1 =sim  0  nao): ");
+        scanf("%d", &continuar);
+
+    } while(continuar == 1);
+
+    
+    printf("\nRESULTADOS\n");
+
+    printf("Baixa: %d\n", baixa);
+    printf("Media: %d\n", media);
+    printf("Alta: %d\n", alta);
+
+    return 0;
+}
+```
