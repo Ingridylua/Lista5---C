@@ -1,0 +1,25 @@
+resposta da questao 5
+
+#include <stdio.h>
+
+int main() {
+
+    int codigo;
+
+    printf("Digite o codigo de acesso: ");
+    scanf("%d", &codigo);
+
+    
+    while(codigo != 4321) {
+
+        printf("\nCodigo incorreto!\n");
+
+        printf("Digite novamente: ");
+        scanf("%d", &codigo);
+
+    }
+
+    printf("\nAcesso liberado!\n");
+
+    return 0;
+}
