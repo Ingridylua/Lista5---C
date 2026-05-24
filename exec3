@@ -1,6 +1,71 @@
 resposta da 3:
 
+#include <stdio.h>
 
+int main() {
+
+    int opcao;
+    float saldo = 1000.00;
+    float deposito;
+
+   
+    do {
+
+        printf("MENU\n");
+        printf("Consultar saldo\n");
+        printf("Depositar\n");
+        printf("Sair\n");
+
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        
+        if(opcao == 1) {
+
+            printf("Saldo atual: %.2f\n", saldo);
+
+        }
+
+       
+        else if(opcao == 2) {
+
+            printf("Digite o valor do deposito: ");
+            scanf("%f", &deposito);
+
+            
+            if(deposito > 0) {
+
+                saldo = saldo + deposito;
+
+                printf("Deposito realizado com sucesso!\n");
+
+            }
+            else {
+
+                printf("Valor invalido!\n");
+
+            }
+
+        }
+
+        
+        else if(opcao == 0) {
+
+            printf("Saindo");
+
+        }
+
+        
+        else {
+
+            printf("Opcao invalida" }
+
+    } while(opcao != 0);
+
+    printf("Programa encerrado.\n");
+
+    return 0;
+}
 
 
 
